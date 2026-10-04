@@ -106,12 +106,12 @@ class App {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `studybuddy_backup_${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = `studyhelper_backup_${new Date().toISOString().slice(0, 10)}.json`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
-      this.showToast('StudyBuddy data exported successfully!', 'success');
+      this.showToast('Study Helper data exported successfully!', 'success');
     });
 
     // Import Data Trigger
