@@ -280,7 +280,7 @@ class PomodoroTimer {
 
     // Browser tab title update
     const modeLabel = this.mode === 'focus' ? 'Focus' : 'Break';
-    document.title = `(${formatted}) ${modeLabel} - StudyBuddy`;
+    document.title = `(${formatted}) ${modeLabel} - Study Helper`;
   }
 
   onTimerComplete() {
